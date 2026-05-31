@@ -35,3 +35,12 @@ let filteredFruits = fruits.filter(
     (ele)=> ele.toLowerCase().includes("a")
 )
 console.log("filtered fruits: ", filteredFruits)
+
+//reduce: summation or combination of element 
+let ages = [45,23,47,10]
+let multiplyRes = ages.reduce(
+    (accumulator,ele)=>{
+        return ele * accumulator
+    }
+)
+console.log("acc: ", multiplyRes)
